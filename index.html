@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>曾傳家 - 履歷</title>
+<style>
+  :root{
+    --bg:#f7f9fb;
+    --card:#ffffff;
+    --accent:#0b6cf0;
+    --muted:#6b7280;
+    --text:#0f1724;
+    --line:#e6eef8;
+    --print-bg:#ffffff;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family: "Noto Sans TC", "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+    margin:0;
+    padding:24px;
+    background:var(--bg);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.45;
+  }
+  .container{
+    max-width:900px;
+    margin:0 auto;
+    background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));
+    box-shadow:0 6px 24px rgba(12,38,63,0.08);
+    border-radius:10px;
+    overflow:hidden;
+    display:flex;
+    gap:0;
+  }
+  /* Left column */
+  .side{
+    width:300px;
+    background:linear-gradient(180deg, var(--card), #f8fbff);
+    padding:28px;
+    border-right:1px solid var(--line);
+  }
+  .main{
+    flex:1;
+    padding:28px 32px;
+  }
+  h1{
+    margin:0 0 6px 0;
+    font-size:22px;
+    letter-spacing:0.2px;
+  }
+  .subtitle{
+    margin:0 0 12px 0;
+    color:var(--muted);
+    font-size:13px;
+  }
+  .contact{font-size:14px;color:var(--muted);margin-top:10px}
+  .contact div{margin:8px 0;display:flex;gap:8px;align-items:center}
+  .label{font-weight:600;color:var(--accent);font-size:12px}
+  .section{margin-bottom:18px}
+  .section h3{
+    margin:0 0 8px 0;
+    font-size:14px;
+    color:var(--accent);
+    letter-spacing:0.3px;
+  }
+  .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+  .skill{
+    background:#eef6ff;padding:6px 8px;border-radius:6px;font-size:13px;color:#024a9a;
+  }
+  .edu-item,.exp-item,.proj-item{margin-bottom:12px}
+  .muted{color:var(--muted);font-size:13px}
+  .bullet{margin-left:12px;color:var(--muted);font-size:13px}
+  .divider{height:1px;background:var(--line);margin:12px 0;border-radius:2px}
+  /* footer note */
+  .note{font-size:12px;color:var(--muted);margin-top:10px}
+  /* print friendly */
+  @media print{
+    body{background:var(--print-bg);padding:0}
+    .container{box-shadow:none;border-radius:0}
+    .side{border-right:1px solid #ddd}
+  }
+  /* responsive */
+  @media (max-width:780px){
+    .container{flex-direction:column;padding:0;margin:0;border-radius:0}
+    .side{width:100%}
+    .main{padding:20px}
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="document" aria-label="Resume of 曾傳家">
+    <aside class="side" aria-label="Contact and skills">
+      <h1>曾傳家</h1>
+      <p class="subtitle">勤益科技大學 · 智慧自動化系 學生</p>
+
+      <div class="contact" aria-label="Contact information">
+        <div><span class="label">電話</span><span style="margin-left:6px">0976-331-540</span></div>
+        <div><span class="label">電子郵件</span><span style="margin-left:6px">3b261023@gm.student.ncut.edu.tw</span></div>
+      </div>
+
+      <div class="divider" role="separator" aria-hidden="true"></div>
+
+      <div class="section" aria-label="Skills">
+        <h3>技能</h3>
+        <div class="skill-list" aria-hidden="false">
+          <!-- 若要增加或修改技能，可直接編輯此處 -->
+          <span class="skill">PLC 基礎</span>
+          <span class="skill">機器人概論</span>
+          <span class="skill">自動化控制</span>
+          <span class="skill">C / C++</span>
+          <span class="skill">Python</span>
+          <span class="skill">MATLAB</span>
+          <span class="skill">CAD / SolidWorks</span>
+          <span class="skill">資料分析</span>
+        </div>
+      </div>
+
+      <div class="divider" role="separator" aria-hidden="true"></div>
+
+      <div class="section" aria-label="Certificates and awards">
+        <h3>證照</h3>
+        <div class="edu-item">
+          <div class="muted">工業儀器丙級</div>
+        </div>
+        <div class="edu-item">
+          <div class="muted">電腦軟體應用丙級</div>
+        </div>
+      </div>
+
+      <div class="divider" role="separator" aria-hidden="true"></div>
+
+      <div class="section" aria-label="Language">
+        <h3>語言能力</h3>
+        <div class="muted">中文（母語） / 英文（基礎閱讀）</div>
+      </div>
+
+      <div class="note">
+        可按需編輯：新增作品、實習或調整技能排序以符合申請職務。
+      </div>
+    </aside>
+
+    <main class="main" aria-label="Main resume content">
+      <section class="section" aria-label="Profile">
+        <h3>個人簡介</h3>
+        <div class="muted">
+          我是勤益科技大學智慧自動化系學生，對工業自動化、PLC 與智慧製造有濃厚興趣。具備實驗室與專題開發經驗，擅長團隊協作與問題分析，期望投身智慧工廠或自動化設備相關職務。
+        </div>
+      </section>
+
+      <section class="section" aria-label="Education">
+        <h3>學歷</h3>
+        <div class="edu-item">
+          <div style="display:flex;justify-content:space-between;align-items:baseline">
+            <div>
+              <strong>勤益科技大學</strong>
+              <div class="muted">智慧自動化系</div>
+            </div>
+            <div class="muted">就學期間：2021 — 2025（預計）</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Projects">
+        <h3>專題 / 專案</h3>
+        <div class="proj-item">
+          <strong>智慧工廠模擬</strong>
+          <div class="muted">專題期間：2023 — 2024</div>
+          <ul class="bullet" aria-label="Project details">
+            <li>專題內容：建立一套智慧工廠模擬系統，模擬產線排程、設備狀態監控與品質追蹤。</li>
+            <li>負責角色：系統整合與模擬驗證、資料收集與報表產出。</li>
+            <li>使用技術：PLC 模擬、Python 數據處理、簡易 HMI 與模擬平台。</li>
+          </ul>
+        </div>
+
+        <!-- 可新增更多專題 -->
+      </section>
+
+      <section class="section" aria-label="Experience">
+        <h3>實習 / 工作經驗</h3>
+        <div class="exp-item">
+          <strong>學校專題實作</strong>
+          <div class="muted">2023 — 2024</div>
+          <ul class="bullet">
+            <li>參與智慧工廠模擬專題，協助設備模組整合、測試自動化流程。</li>
+            <li>撰寫測試腳本、分析模擬數據並提出改善建議。</li>
+          </ul>
+        </div>
+
+        <!-- 若有公司實習，可在此補上 -->
+      </section>
+
+      <section class="section" aria-label="Additional">
+        <h3>其他</h3>
+        <div class="muted">
+          - 熟悉基本電學與機構概念；具備團隊協作經驗與文件撰寫能力。<br>
+          - 願意接受出差與現場設備除錯工作；快速學習新平台與工具。
+        </div>
+      </section>
+
+      <div class="divider" role="separator" aria-hidden="true"></div>
+
+      <footer style="font-size:13px;color:var(--muted)">
+        最後更新：2026-04-07 · 如需修改內容請告知，我可替你產生新版 HTML。
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
